@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 44" fill="none">
+  <!-- Shield mark -->
+  <path d="M18 4 L4 10 L4 22 C4 30 10.5 37 18 40 C25.5 37 32 30 32 22 L32 10 Z" fill="#4F46E5" opacity="0.12"/>
+  <path d="M18 7 L7 12 L7 22 C7 28.5 12 34.5 18 37 C24 34.5 29 28.5 29 22 L29 12 Z" fill="none" stroke="#4F46E5" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M12 22 L16 26 L24 18" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Wordmark -->
+  <text x="40" y="31" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="-0.3" fill="#111827">archera</text>
+  <text x="107" y="31" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-weight="400" fill="#4F46E5">.ai</text>
+</svg>
