@@ -12,10 +12,20 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Reduce your cloud spend with expert guidance. Get competing FinOps quotes from top partners within days. No commitment, no infrastructure changes." },
       { property: "og:title", content: "Contact fixcloudcost — Cloud Cost Optimization" },
       { property: "og:description", content: "Get competing FinOps quotes for your AWS, Azure or GCP spend." },
+
+      { property: "og:url", content: "https://fixcloudcost.com/contact" },
+      { property: "og:image", content: "https://fixcloudcost.com/hero-bg.webp" },
+
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://fixcloudcost.com/hero-bg.webp" },
+
+      { name: "robots", content: "index,follow" },
+      { rel: "canonical", href: "https://fixcloudcost.com/contact" },
     ],
   }),
   component: ContactPage,
 });
+
 
 const schema = z.object({
   name: z.string().trim().min(1, "Required").max(100),

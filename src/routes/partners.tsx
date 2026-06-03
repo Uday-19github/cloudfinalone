@@ -16,10 +16,20 @@ export const Route = createFileRoute("/partners")({
       },
       { property: "og:title", content: "fixcloudcost FinOps Partner Network" },
       { property: "og:description", content: "Top FinOps experts across AWS, Azure and GCP." },
+
+      { property: "og:url", content: "https://fixcloudcost.com/partners" },
+      { property: "og:image", content: "https://fixcloudcost.com/hero-bg.webp" },
+
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://fixcloudcost.com/hero-bg.webp" },
+
+      { name: "robots", content: "index,follow" },
+      { rel: "canonical", href: "https://fixcloudcost.com/partners" },
     ],
   }),
   component: PartnersPage,
 });
+
 
 type Partner = {
   id: string;

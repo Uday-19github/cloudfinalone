@@ -29,10 +29,18 @@ export const Route = createFileRoute("/services")({
         content:
           "End-to-end cloud consulting and FinOps partner matching for AWS, Azure, and GCP.",
       },
+      { property: "og:url", content: "https://fixcloudcost.com/services" },
+      { property: "og:image", content: "https://fixcloudcost.com/hero-bg.webp" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://fixcloudcost.com/hero-bg.webp" },
+      { name: "robots", content: "index,follow" },
+      { rel: "canonical", href: "https://fixcloudcost.com/services" },
     ],
   }),
   component: ServicesPage,
 });
+
+
 
 const serviceImages = [
   costPerfImg,

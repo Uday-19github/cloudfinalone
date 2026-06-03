@@ -52,10 +52,20 @@ export const Route = createFileRoute("/case-studies")({
         property: "og:description",
         content: "Enterprise AWS cost optimization case studies and measurable FinOps outcomes.",
       },
+
+      { property: "og:url", content: "https://fixcloudcost.com/case-studies" },
+      { property: "og:image", content: "https://fixcloudcost.com/hero-bg.webp" },
+
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://fixcloudcost.com/hero-bg.webp" },
+
+      { name: "robots", content: "index,follow" },
+      { rel: "canonical", href: "https://fixcloudcost.com/case-studies" },
     ],
   }),
   component: CaseStudiesPage,
 });
+
 
 function BulletList({ items }: { items: string[] }) {
   if (items.length === 0) return null;

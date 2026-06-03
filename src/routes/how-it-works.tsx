@@ -6,8 +6,33 @@ import quoteComparisonImg from "@/assets/Quote comparison.png";
 import signAndSaveImg from "@/assets/sign and save.png";
 
 export const Route = createFileRoute("/how-it-works")({
+  head: () => ({
+    meta: [
+      { title: "How It Works — fixcloudcost" },
+      {
+        name: "description",
+        content:
+          "Learn our 7-day cloud cost optimization process: discovery call, read-only access, partner bidding, quote comparison, and sign & save across AWS, Azure, and GCP.",
+      },
+      { property: "og:title", content: "How It Works — fixcloudcost" },
+      {
+        property: "og:description",
+        content:
+          "Our 7-day process for cloud cost optimization: transparent quotes and measurable FinOps outcomes.",
+      },
+      { property: "og:url", content: "https://fixcloudcost.com/how-it-works" },
+      { property: "og:image", content: "https://fixcloudcost.com/hero-bg.webp" },
+
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://fixcloudcost.com/hero-bg.webp" },
+
+      { name: "robots", content: "index,follow" },
+      { rel: "canonical", href: "https://fixcloudcost.com/how-it-works" },
+    ],
+  }),
   component: HowItWorksPage,
 });
+
 
 const FOREST = "#06402B";
 const HEADING_LIME = "#5CB338";

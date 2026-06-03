@@ -49,38 +49,37 @@ const TestimonialsSection = lazy(() =>
 
 
 export const Route = createFileRoute("/")({
-
   head: () => ({
-
     meta: [
-
       { title: "fixcloudcost — Enterprise Cloud Consulting & Cost Optimization" },
-
       {
-
         name: "description",
-
-        content: "Transform your cloud infrastructure with expert consulting services. Cost optimization, migration, architecture design, and 24/7 managed operations across AWS, Azure, and GCP.",
-
+        content:
+          "Transform your cloud infrastructure with expert consulting services. Cost optimization, migration, architecture design, and 24/7 managed operations across AWS, Azure, and GCP.",
       },
-
-      { property: "og:title", content: "fixcloudcost — Enterprise Cloud Consulting & Cost Optimization" },
-
       {
-
-        property: "og:description",
-
-        content: "Enterprise-grade cloud consulting and cost optimization services for AWS, Azure, and GCP infrastructure.",
-
+        property: "og:title",
+        content: "fixcloudcost — Enterprise Cloud Consulting & Cost Optimization",
       },
+      {
+        property: "og:description",
+        content:
+          "Enterprise-grade cloud consulting and cost optimization services for AWS, Azure, and GCP infrastructure.",
+      },
+      { property: "og:url", content: "https://fixcloudcost.com/" },
+      { property: "og:image", content: "https://fixcloudcost.com/hero-bg.webp" },
 
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://fixcloudcost.com/hero-bg.webp" },
+
+      { name: "robots", content: "index,follow" },
+      { rel: "canonical", href: "https://fixcloudcost.com/" },
     ],
-
   }),
 
   component: HomePage,
-
 });
+
 
 
 
