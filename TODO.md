@@ -1,10 +1,16 @@
-# TODO - Add SEO to site
+# SEO & Sitemap Implementation - Progress
 
-- [x] Step 1: Add global SEO defaults to `index.html` (OG/Twitter/robots/canonical/image defaults).
-- [x] Step 2: Create `src/lib/seo.ts` helper to centralize common meta + JSON-LD schema.
-- [ ] Step 3: Update root/global usage (if needed) so `HeadContent` picks up defaults.
-- [x] Step 4: Update routes to include missing SEO tags (canonical, twitter, og:image, robots).
-- [x] Step 5: Add SEO `head()` block to `src/routes/how-it-works.tsx`.
-- [x] Step 6: Run `npm run build` to ensure the project compiles.
+- [ ] Inspect remaining project files relevant to SEO/head/rendering.
+- [ ] Produce detailed SEO audit report (no placeholders; derive from actual route files).
+- [ ] Fix metadata/SEO conflicts and ensure unique metadata for every indexable route.
+- [ ] Improve heading hierarchy (H1/H2/H3) where issues exist.
+- [ ] Add/verify robots.txt + sitemap.xml behavior (already added static files).
+- [ ] Add structured data (JSON-LD) where appropriate per page content.
+- [ ] Ensure canonicalization and Open Graph/Twitter tags are correct and non-duplicative.
+- [ ] Add noindex handling for any routes that must be excluded (none found yet).
+- [ ] Implement technical improvements (crawlability, rendering strategy guidance).
 
+## Done
+- [x] Created `public/sitemap.xml` with all 6 indexable routes.
+- [x] Created `public/robots.txt` referencing the sitemap.
 
